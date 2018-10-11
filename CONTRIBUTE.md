@@ -5,10 +5,27 @@ CrowdVoc intends to be a community effort, as such it welcomes several types of 
 #### Issues
 Discussion is handled using Github issues opening and or participating. We have created the following labels:
 
-* **Requirement**: For proposal and discussion of requirements 
-* **Use Case**: For the proposal and discussion of use cases
-* **Alignment**: For the proposal and discussion of alignments with other vocabularies and ontologies, including property re-use
-* **Classes / Properties** For the proposal and discussion of classes and/or properties definitions within the Ontology. Commonly, these * issues should be linked to a requirement or use case
+
+**Use Case**: For the proposal and discussion of use cases
+A good use case description should be structured as follows:
+
+- Use case name
+- Stakeholders
+- Problem statement
+- Existing approaches (Using other vocabularies)
+- Links to other issues (if any)
+
+Eventually, links to requirements
+
+**Requirement**: For proposal and discussion of requirements 
+
+A requirement is a concise description of a feature of the vocabulary. Linked to the use cases that require it
+
+
+**Alignment**: For the proposal and discussion of alignments with other vocabularies and ontologies, including property re-use
+
+
+**Classes / Properties** For the proposal and discussion of classes and/or properties definitions within the Ontology. Commonly, these * issues should be linked to a requirement or use case
 
 #### Pull Requests
 
