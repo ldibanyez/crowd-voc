@@ -11,7 +11,7 @@ A good use case description should be structured as follows:
 
 - Use case name
 - Stakeholders
-- Problem statement
+- Description
 - Existing approaches (Using other vocabularies)
 - Links to other issues (if any)
 
