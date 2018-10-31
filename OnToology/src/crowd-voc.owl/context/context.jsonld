@@ -1,0 +1,114 @@
+{
+  "@context" : {
+    "has_contributor" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_contributor",
+      "@type" : "@id"
+    },
+    "has_allocation_constraint" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_allocation_constraint",
+      "@type" : "@id"
+    },
+    "Dataset" : {
+      "@id" : "http://www.w3.org/ns/dcat#Dataset"
+    },
+    "Requester" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#Requester"
+    },
+    "created_task_configuration" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#created_task_configuration",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "CrowdsourcingTaskConfiguration" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration"
+    },
+    "iLogData" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#iLogData"
+    },
+    "CrowdsourcingTask" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask"
+    },
+    "has_contributor_constraint" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_contributor_constraint",
+      "@type" : "@id"
+    },
+    "has_instruction_set" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_instruction_set",
+      "@type" : "@id"
+    },
+    "iLogAccelerometerReadings" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#iLogAccelerometerReadings"
+    },
+    "Incentive" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#Incentive"
+    },
+    "Participant" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#Participant"
+    },
+    "Agent" : {
+      "@id" : "http://www.w3.org/ns/prov#Agent"
+    },
+    "CrowdSourcingTaskConstraint" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdSourcingTaskConstraint"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "ImageSentimentClassificationTask" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#ImageSentimentClassificationTask"
+    },
+    "has_input" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_input",
+      "@type" : "@id"
+    },
+    "fixme" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#fixme"
+    },
+    "CrowdsourcingTaskContributorConstraint" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskContributorConstraint"
+    },
+    "CrowdsourcingTaskAllocationConstraint" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskAllocationConstraint"
+    },
+    "CrowdsourcingTaskInstructionSet" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskInstructionSet"
+    },
+    "Worker" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#Worker"
+    },
+    "todo" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#todo"
+    },
+    "SentimentClassificationTask" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#SentimentClassificationTask"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "has_configuration" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_configuration",
+      "@type" : "@id"
+    },
+    "has_incentive" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_incentive",
+      "@type" : "@id"
+    },
+    "iLogGPSTrace" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#iLogGPSTrace"
+    },
+    "has_constraint" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_constraint",
+      "@type" : "@id"
+    },
+    "has_output" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_output",
+      "@type" : "@id"
+    },
+    "Contributor" : {
+      "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#Contributor"
+    }
+  }
+}

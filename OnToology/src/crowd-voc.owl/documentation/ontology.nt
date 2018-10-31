@@ -1,0 +1,237 @@
+<http://qrowd-project.eu/ontologies/crowd-voc#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://qrowd-project.eu/ontologies/crowd-voc#> <http://www.w3.org/2002/07/owl#versionIRI> <http://qrowd-project.eu/ontologies/crowd-voc#0.0.1> .
+<http://qrowd-project.eu/ontologies/crowd-voc#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/dcat> .
+<http://qrowd-project.eu/ontologies/crowd-voc#> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/ns/prov-o-20130430> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#fixme
+<http://qrowd-project.eu/ontologies/crowd-voc#fixme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#todo
+<http://qrowd-project.eu/ontologies/crowd-voc#todo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#created_task_configuration
+<http://qrowd-project.eu/ontologies/crowd-voc#created_task_configuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://qrowd-project.eu/ontologies/crowd-voc#created_task_configuration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://qrowd-project.eu/ontologies/crowd-voc#Requester> .
+<http://qrowd-project.eu/ontologies/crowd-voc#created_task_configuration> <http://www.w3.org/2000/01/rdf-schema#range> <http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration> .
+<http://qrowd-project.eu/ontologies/crowd-voc#created_task_configuration> <http://www.w3.org/2000/01/rdf-schema#label> "created task configuration"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#has_allocation_constraint
+<http://qrowd-project.eu/ontologies/crowd-voc#has_allocation_constraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_allocation_constraint> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://qrowd-project.eu/ontologies/crowd-voc#has_constraint> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_allocation_constraint> <http://www.w3.org/2000/01/rdf-schema#range> <http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskAllocationConstraint> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_allocation_constraint> <http://www.w3.org/2000/01/rdf-schema#label> "has allocation constraint"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#has_configuration
+<http://qrowd-project.eu/ontologies/crowd-voc#has_configuration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_configuration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_configuration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_configuration> <http://www.w3.org/2000/01/rdf-schema#range> <http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_configuration> <http://www.w3.org/2000/01/rdf-schema#label> "has configuration"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#has_constraint
+<http://qrowd-project.eu/ontologies/crowd-voc#has_constraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_constraint> <http://www.w3.org/2000/01/rdf-schema#domain> <http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_constraint> <http://www.w3.org/2000/01/rdf-schema#range> <http://qrowd-project.eu/ontologies/crowd-voc#CrowdSourcingTaskConstraint> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_constraint> <http://www.w3.org/2000/01/rdf-schema#label> "has constraint"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#has_contributor
+<http://qrowd-project.eu/ontologies/crowd-voc#has_contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_contributor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_contributor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_contributor> <http://www.w3.org/2000/01/rdf-schema#range> <http://qrowd-project.eu/ontologies/crowd-voc#Contributor> .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#has_contributor_constraint
+<http://qrowd-project.eu/ontologies/crowd-voc#has_contributor_constraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_contributor_constraint> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://qrowd-project.eu/ontologies/crowd-voc#has_constraint> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_contributor_constraint> <http://www.w3.org/2000/01/rdf-schema#label> "has contributor constraint"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#has_incentive
+<http://qrowd-project.eu/ontologies/crowd-voc#has_incentive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_incentive> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_incentive> <http://www.w3.org/2000/01/rdf-schema#domain> <http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_incentive> <http://www.w3.org/2000/01/rdf-schema#range> <http://qrowd-project.eu/ontologies/crowd-voc#Incentive> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_incentive> <http://www.w3.org/2000/01/rdf-schema#label> "has incentive"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#has_input
+<http://qrowd-project.eu/ontologies/crowd-voc#has_input> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_input> <http://www.w3.org/2000/01/rdf-schema#domain> <http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_input> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#Dataset> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_input> <http://www.w3.org/2000/01/rdf-schema#label> "has input"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#has_instruction_set
+<http://qrowd-project.eu/ontologies/crowd-voc#has_instruction_set> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_instruction_set> <http://www.w3.org/2000/01/rdf-schema#domain> <http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_instruction_set> <http://www.w3.org/2000/01/rdf-schema#range> <http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskInstructionSet> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_instruction_set> <http://www.w3.org/2000/01/rdf-schema#label> "has instruction set"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#has_output
+<http://qrowd-project.eu/ontologies/crowd-voc#has_output> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_output> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_output> <http://www.w3.org/2000/01/rdf-schema#domain> <http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_output> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/dcat#Dataset> .
+<http://qrowd-project.eu/ontologies/crowd-voc#has_output> <http://www.w3.org/2000/01/rdf-schema#label> "has output"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#Contributor
+<http://qrowd-project.eu/ontologies/crowd-voc#Contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qrowd-project.eu/ontologies/crowd-voc#Contributor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<http://qrowd-project.eu/ontologies/crowd-voc#Contributor> <http://www.w3.org/2000/01/rdf-schema#comment> "A prov:Agent that executes/solves a crowdsourcing task."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#Contributor> <http://www.w3.org/2000/01/rdf-schema#label> "contributor"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#CrowdSourcingTaskConstraint
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdSourcingTaskConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdSourcingTaskConstraint> <http://qrowd-project.eu/ontologies/crowd-voc#todo> "Add human readable description."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdSourcingTaskConstraint> <http://qrowd-project.eu/ontologies/crowd-voc#todo> "Find proper super class."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdSourcingTaskConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "crowdsourcing task constraint"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://qrowd-project.eu/ontologies/crowd-voc#has_configuration> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration> .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://qrowd-project.eu/ontologies/crowd-voc#has_input> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/ns/dcat#Dataset> .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://qrowd-project.eu/ontologies/crowd-voc#has_output> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/ns/dcat#Dataset> .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://qrowd-project.eu/ontologies/crowd-voc#has_contributor> .
+_:genid4 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <http://qrowd-project.eu/ontologies/crowd-voc#Contributor> .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask> <http://qrowd-project.eu/ontologies/crowd-voc#todo> "Add human readable description."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask> <http://qrowd-project.eu/ontologies/crowd-voc#todo> "Add start and end time if this is meaningful."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask> <http://qrowd-project.eu/ontologies/crowd-voc#todo> "Find proper super class."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask> <http://www.w3.org/2000/01/rdf-schema#label> "crowdsourcing task"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskAllocationConstraint
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskAllocationConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskAllocationConstraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qrowd-project.eu/ontologies/crowd-voc#CrowdSourcingTaskConstraint> .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskAllocationConstraint> <http://qrowd-project.eu/ontologies/crowd-voc#todo> "Add human readable description."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskAllocationConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "crowdsourcing task allocation constraint"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://qrowd-project.eu/ontologies/crowd-voc#has_allocation_constraint> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskAllocationConstraint> .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://qrowd-project.eu/ontologies/crowd-voc#has_contributor_constraint> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskContributorConstraint> .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://qrowd-project.eu/ontologies/crowd-voc#has_incentive> .
+_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://qrowd-project.eu/ontologies/crowd-voc#Incentive> .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://qrowd-project.eu/ontologies/crowd-voc#has_instruction_set> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskInstructionSet> .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration> <http://qrowd-project.eu/ontologies/crowd-voc#todo> "Add a human readable description."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration> <http://qrowd-project.eu/ontologies/crowd-voc#todo> "Find proper super class."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration> <http://www.w3.org/2000/01/rdf-schema#label> "crowdsourcing task configuration"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskContributorConstraint
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskContributorConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskContributorConstraint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qrowd-project.eu/ontologies/crowd-voc#CrowdSourcingTaskConstraint> .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskContributorConstraint> <http://www.w3.org/2000/01/rdf-schema#comment> "A crowdsouring task constraint that describes the abilities and qualifications expected from a contributor to properly solve a given task (e.g. native language, age, geographic position, ...)."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskContributorConstraint> <http://www.w3.org/2000/01/rdf-schema#label> "crowdsourcing task contributor constraint"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskInstructionSet
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskInstructionSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskInstructionSet> <http://qrowd-project.eu/ontologies/crowd-voc#todo> "Add human readable explanation."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskInstructionSet> <http://qrowd-project.eu/ontologies/crowd-voc#todo> "Find proper super class."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskInstructionSet> <http://www.w3.org/2000/01/rdf-schema#label> "crowdsourcing task instruction set"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#ImageSentimentClassificationTask
+<http://qrowd-project.eu/ontologies/crowd-voc#ImageSentimentClassificationTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qrowd-project.eu/ontologies/crowd-voc#ImageSentimentClassificationTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qrowd-project.eu/ontologies/crowd-voc#SentimentClassificationTask> .
+<http://qrowd-project.eu/ontologies/crowd-voc#ImageSentimentClassificationTask> <http://www.w3.org/2000/01/rdf-schema#comment> "A sentiment classification task which takes image data as input."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#ImageSentimentClassificationTask> <http://www.w3.org/2000/01/rdf-schema#label> "image sentiment classification task"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#Incentive
+<http://qrowd-project.eu/ontologies/crowd-voc#Incentive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qrowd-project.eu/ontologies/crowd-voc#Incentive> <http://qrowd-project.eu/ontologies/crowd-voc#todo> "Add human redable description."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#Incentive> <http://qrowd-project.eu/ontologies/crowd-voc#todo> "Find proper super class."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#Incentive> <http://www.w3.org/2000/01/rdf-schema#label> "incentive"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#Participant
+<http://qrowd-project.eu/ontologies/crowd-voc#Participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qrowd-project.eu/ontologies/crowd-voc#Participant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qrowd-project.eu/ontologies/crowd-voc#Contributor> .
+<http://qrowd-project.eu/ontologies/crowd-voc#Participant> <http://www.w3.org/2000/01/rdf-schema#comment> "A contributor that is unpaid/volunteering."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#Participant> <http://www.w3.org/2000/01/rdf-schema#label> "participant"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#Requester
+<http://qrowd-project.eu/ontologies/crowd-voc#Requester> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qrowd-project.eu/ontologies/crowd-voc#Requester> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Agent> .
+<http://qrowd-project.eu/ontologies/crowd-voc#Requester> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://qrowd-project.eu/ontologies/crowd-voc#created_task_configuration> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration> .
+<http://qrowd-project.eu/ontologies/crowd-voc#Requester> <http://www.w3.org/2000/01/rdf-schema#comment> "A prov:Agent (i.e. a machine or human) that initiates a crowdsourcing task."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#Requester> <http://www.w3.org/2000/01/rdf-schema#label> "requester"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#SentimentClassificationTask
+<http://qrowd-project.eu/ontologies/crowd-voc#SentimentClassificationTask> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qrowd-project.eu/ontologies/crowd-voc#SentimentClassificationTask> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask> .
+<http://qrowd-project.eu/ontologies/crowd-voc#SentimentClassificationTask> <http://www.w3.org/2000/01/rdf-schema#comment> "A crowdsourcing task that aims at assigning a sentiment category to a certain piece of information which expresses a sentiment."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#SentimentClassificationTask> <http://www.w3.org/2000/01/rdf-schema#label> "sentiment classification task"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#Worker
+<http://qrowd-project.eu/ontologies/crowd-voc#Worker> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qrowd-project.eu/ontologies/crowd-voc#Worker> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qrowd-project.eu/ontologies/crowd-voc#Contributor> .
+<http://qrowd-project.eu/ontologies/crowd-voc#Worker> <http://www.w3.org/2000/01/rdf-schema#comment> "A contributor that is paid."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#Worker> <http://www.w3.org/2000/01/rdf-schema#label> "worker"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#iLogAccelerometerReadings
+<http://qrowd-project.eu/ontologies/crowd-voc#iLogAccelerometerReadings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qrowd-project.eu/ontologies/crowd-voc#iLogAccelerometerReadings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qrowd-project.eu/ontologies/crowd-voc#iLogData> .
+<http://qrowd-project.eu/ontologies/crowd-voc#iLogAccelerometerReadings> <http://www.w3.org/2000/01/rdf-schema#comment> "i-Log data comprised of per-user streams of accelerometer values (in X, Y, and Z direction) with timestamps."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#iLogAccelerometerReadings> <http://www.w3.org/2000/01/rdf-schema#label> "i-Log accelerometer readings"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#iLogData
+<http://qrowd-project.eu/ontologies/crowd-voc#iLogData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qrowd-project.eu/ontologies/crowd-voc#iLogData> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/dcat#Dataset> .
+<http://qrowd-project.eu/ontologies/crowd-voc#iLogData> <http://www.w3.org/2000/01/rdf-schema#label> "A dcat:Dataset that contains data captured by the i-Log mobile application."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#iLogData> <http://www.w3.org/2000/01/rdf-schema#label> "i-Log data"@en .
+# 
+# http://qrowd-project.eu/ontologies/crowd-voc#iLogGPSTrace
+<http://qrowd-project.eu/ontologies/crowd-voc#iLogGPSTrace> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://qrowd-project.eu/ontologies/crowd-voc#iLogGPSTrace> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://qrowd-project.eu/ontologies/crowd-voc#iLogData> .
+<http://qrowd-project.eu/ontologies/crowd-voc#iLogGPSTrace> <http://www.w3.org/2000/01/rdf-schema#comment> "i-Log data comprised of per-user streams of GPS points with timestamps."@en .
+<http://qrowd-project.eu/ontologies/crowd-voc#iLogGPSTrace> <http://www.w3.org/2000/01/rdf-schema#label> "i-Log GPS trace"@en .
+# 
+# http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

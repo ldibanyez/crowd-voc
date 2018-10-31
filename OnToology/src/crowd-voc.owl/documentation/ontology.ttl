@@ -1,0 +1,260 @@
+@prefix : <http://qrowd-project.eu/ontologies/crowd-voc#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://qrowd-project.eu/ontologies/crowd-voc#> .
+
+<http://qrowd-project.eu/ontologies/crowd-voc#> rdf:type owl:Ontology ;
+                                                 owl:versionIRI <http://qrowd-project.eu/ontologies/crowd-voc#0.0.1> ;
+                                                 owl:imports <http://www.w3.org/ns/dcat> ,
+                                                             <http://www.w3.org/ns/prov-o-20130430> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#fixme
+:fixme rdf:type owl:AnnotationProperty .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#todo
+:todo rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#created_task_configuration
+:created_task_configuration rdf:type owl:ObjectProperty ;
+                            rdfs:domain :Requester ;
+                            rdfs:range :CrowdsourcingTaskConfiguration ;
+                            rdfs:label "created task configuration"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#has_allocation_constraint
+:has_allocation_constraint rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :has_constraint ;
+                           rdfs:range :CrowdsourcingTaskAllocationConstraint ;
+                           rdfs:label "has allocation constraint"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#has_configuration
+:has_configuration rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain :CrowdsourcingTask ;
+                   rdfs:range :CrowdsourcingTaskConfiguration ;
+                   rdfs:label "has configuration"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#has_constraint
+:has_constraint rdf:type owl:ObjectProperty ;
+                rdfs:domain :CrowdsourcingTaskConfiguration ;
+                rdfs:range :CrowdSourcingTaskConstraint ;
+                rdfs:label "has constraint"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#has_contributor
+:has_contributor rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain :CrowdsourcingTask ;
+                 rdfs:range :Contributor .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#has_contributor_constraint
+:has_contributor_constraint rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf :has_constraint ;
+                            rdfs:label "has contributor constraint"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#has_incentive
+:has_incentive rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain :CrowdsourcingTaskConfiguration ;
+               rdfs:range :Incentive ;
+               rdfs:label "has incentive"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#has_input
+:has_input rdf:type owl:ObjectProperty ;
+           rdfs:domain :CrowdsourcingTask ;
+           rdfs:range <http://www.w3.org/ns/dcat#Dataset> ;
+           rdfs:label "has input"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#has_instruction_set
+:has_instruction_set rdf:type owl:ObjectProperty ;
+                     rdfs:domain :CrowdsourcingTaskConfiguration ;
+                     rdfs:range :CrowdsourcingTaskInstructionSet ;
+                     rdfs:label "has instruction set"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#has_output
+:has_output rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :CrowdsourcingTask ;
+            rdfs:range <http://www.w3.org/ns/dcat#Dataset> ;
+            rdfs:label "has output"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#Contributor
+:Contributor rdf:type owl:Class ;
+             rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> ;
+             rdfs:comment "A prov:Agent that executes/solves a crowdsourcing task."@en ;
+             rdfs:label "contributor"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#CrowdSourcingTaskConstraint
+:CrowdSourcingTaskConstraint rdf:type owl:Class ;
+                             :todo "Add human readable description."@en ,
+                                   "Find proper super class."@en ;
+                             rdfs:label "crowdsourcing task constraint"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask
+:CrowdsourcingTask rdf:type owl:Class ;
+                   rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                     owl:onProperty :has_configuration ;
+                                     owl:someValuesFrom :CrowdsourcingTaskConfiguration
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :has_input ;
+                                     owl:someValuesFrom <http://www.w3.org/ns/dcat#Dataset>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :has_output ;
+                                     owl:someValuesFrom <http://www.w3.org/ns/dcat#Dataset>
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :has_contributor ;
+                                     owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                     owl:onClass :Contributor
+                                   ] ;
+                   :todo "Add human readable description."@en ,
+                         "Add start and end time if this is meaningful."@en ,
+                         "Find proper super class."@en ;
+                   rdfs:label "crowdsourcing task"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskAllocationConstraint
+:CrowdsourcingTaskAllocationConstraint rdf:type owl:Class ;
+                                       rdfs:subClassOf :CrowdSourcingTaskConstraint ;
+                                       :todo "Add human readable description."@en ;
+                                       rdfs:label "crowdsourcing task allocation constraint"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration
+:CrowdsourcingTaskConfiguration rdf:type owl:Class ;
+                                rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :has_allocation_constraint ;
+                                                  owl:someValuesFrom :CrowdsourcingTaskAllocationConstraint
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :has_contributor_constraint ;
+                                                  owl:someValuesFrom :CrowdsourcingTaskContributorConstraint
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :has_incentive ;
+                                                  owl:someValuesFrom :Incentive
+                                                ] ,
+                                                [ rdf:type owl:Restriction ;
+                                                  owl:onProperty :has_instruction_set ;
+                                                  owl:someValuesFrom :CrowdsourcingTaskInstructionSet
+                                                ] ;
+                                :todo "Add a human readable description."@en ,
+                                      "Find proper super class."@en ;
+                                rdfs:label "crowdsourcing task configuration"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskContributorConstraint
+:CrowdsourcingTaskContributorConstraint rdf:type owl:Class ;
+                                        rdfs:subClassOf :CrowdSourcingTaskConstraint ;
+                                        rdfs:comment "A crowdsouring task constraint that describes the abilities and qualifications expected from a contributor to properly solve a given task (e.g. native language, age, geographic position, ...)."@en ;
+                                        rdfs:label "crowdsourcing task contributor constraint"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskInstructionSet
+:CrowdsourcingTaskInstructionSet rdf:type owl:Class ;
+                                 :todo "Add human readable explanation."@en ,
+                                       "Find proper super class."@en ;
+                                 rdfs:label "crowdsourcing task instruction set"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#ImageSentimentClassificationTask
+:ImageSentimentClassificationTask rdf:type owl:Class ;
+                                  rdfs:subClassOf :SentimentClassificationTask ;
+                                  rdfs:comment "A sentiment classification task which takes image data as input."@en ;
+                                  rdfs:label "image sentiment classification task"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#Incentive
+:Incentive rdf:type owl:Class ;
+           :todo "Add human redable description."@en ,
+                 "Find proper super class."@en ;
+           rdfs:label "incentive"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#Participant
+:Participant rdf:type owl:Class ;
+             rdfs:subClassOf :Contributor ;
+             rdfs:comment "A contributor that is unpaid/volunteering."@en ;
+             rdfs:label "participant"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#Requester
+:Requester rdf:type owl:Class ;
+           rdfs:subClassOf <http://www.w3.org/ns/prov#Agent> ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :created_task_configuration ;
+                             owl:someValuesFrom :CrowdsourcingTaskConfiguration
+                           ] ;
+           rdfs:comment "A prov:Agent (i.e. a machine or human) that initiates a crowdsourcing task."@en ;
+           rdfs:label "requester"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#SentimentClassificationTask
+:SentimentClassificationTask rdf:type owl:Class ;
+                             rdfs:subClassOf :CrowdsourcingTask ;
+                             rdfs:comment "A crowdsourcing task that aims at assigning a sentiment category to a certain piece of information which expresses a sentiment."@en ;
+                             rdfs:label "sentiment classification task"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#Worker
+:Worker rdf:type owl:Class ;
+        rdfs:subClassOf :Contributor ;
+        rdfs:comment "A contributor that is paid."@en ;
+        rdfs:label "worker"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#iLogAccelerometerReadings
+:iLogAccelerometerReadings rdf:type owl:Class ;
+                           rdfs:subClassOf :iLogData ;
+                           rdfs:comment "i-Log data comprised of per-user streams of accelerometer values (in X, Y, and Z direction) with timestamps."@en ;
+                           rdfs:label "i-Log accelerometer readings"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#iLogData
+:iLogData rdf:type owl:Class ;
+          rdfs:subClassOf <http://www.w3.org/ns/dcat#Dataset> ;
+          rdfs:label "A dcat:Dataset that contains data captured by the i-Log mobile application."@en ,
+                     "i-Log data"@en .
+
+
+###  http://qrowd-project.eu/ontologies/crowd-voc#iLogGPSTrace
+:iLogGPSTrace rdf:type owl:Class ;
+              rdfs:subClassOf :iLogData ;
+              rdfs:comment "i-Log data comprised of per-user streams of GPS points with timestamps."@en ;
+              rdfs:label "i-Log GPS trace"@en .
+
+
+###  http://www.w3.org/ns/prov#Agent
+<http://www.w3.org/ns/prov#Agent> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

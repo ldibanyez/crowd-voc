@@ -1,0 +1,487 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_configuration"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_input"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Dataset"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_output"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Dataset"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#Contributor"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_contributor"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_allocation_constraint"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskAllocationConstraint"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_contributor_constraint"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskContributorConstraint"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_incentive"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#Incentive"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_instruction_set"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskInstructionSet"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#created_task_configuration"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.w3.org/ns/dcat"
+  }, {
+    "@id" : "http://www.w3.org/ns/prov-o-20130430"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#0.0.1"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#Contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A prov:Agent that executes/solves a crowdsourcing task."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "contributor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Agent"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdSourcingTaskConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://qrowd-project.eu/ontologies/crowd-voc#todo" : [ {
+    "@language" : "en",
+    "@value" : "Add human readable description."
+  }, {
+    "@language" : "en",
+    "@value" : "Find proper super class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "crowdsourcing task constraint"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://qrowd-project.eu/ontologies/crowd-voc#todo" : [ {
+    "@language" : "en",
+    "@value" : "Add human readable description."
+  }, {
+    "@language" : "en",
+    "@value" : "Add start and end time if this is meaningful."
+  }, {
+    "@language" : "en",
+    "@value" : "Find proper super class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "crowdsourcing task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  }, {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskAllocationConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://qrowd-project.eu/ontologies/crowd-voc#todo" : [ {
+    "@language" : "en",
+    "@value" : "Add human readable description."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "crowdsourcing task allocation constraint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdSourcingTaskConstraint"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://qrowd-project.eu/ontologies/crowd-voc#todo" : [ {
+    "@language" : "en",
+    "@value" : "Add a human readable description."
+  }, {
+    "@language" : "en",
+    "@value" : "Find proper super class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "crowdsourcing task configuration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid5"
+  }, {
+    "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
+  }, {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskContributorConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A crowdsouring task constraint that describes the abilities and qualifications expected from a contributor to properly solve a given task (e.g. native language, age, geographic position, ...)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "crowdsourcing task contributor constraint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdSourcingTaskConstraint"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskInstructionSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://qrowd-project.eu/ontologies/crowd-voc#todo" : [ {
+    "@language" : "en",
+    "@value" : "Add human readable explanation."
+  }, {
+    "@language" : "en",
+    "@value" : "Find proper super class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "crowdsourcing task instruction set"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#ImageSentimentClassificationTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A sentiment classification task which takes image data as input."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "image sentiment classification task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#SentimentClassificationTask"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#Incentive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://qrowd-project.eu/ontologies/crowd-voc#todo" : [ {
+    "@language" : "en",
+    "@value" : "Add human redable description."
+  }, {
+    "@language" : "en",
+    "@value" : "Find proper super class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "incentive"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#Participant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A contributor that is unpaid/volunteering."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "participant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#Contributor"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#Requester",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A prov:Agent (i.e. a machine or human) that initiates a crowdsourcing task."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "requester"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/prov#Agent"
+  }, {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#SentimentClassificationTask",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A crowdsourcing task that aims at assigning a sentiment category to a certain piece of information which expresses a sentiment."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "sentiment classification task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#Worker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A contributor that is paid."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "worker"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#Contributor"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#created_task_configuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#Requester"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "created task configuration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#fixme",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_allocation_constraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has allocation constraint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskAllocationConstraint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_constraint"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_configuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has configuration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_constraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has constraint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdSourcingTaskConstraint"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#Contributor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_contributor_constraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has contributor constraint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_constraint"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_incentive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has incentive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#Incentive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_input",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has input"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Dataset"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_instruction_set",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has instruction set"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskInstructionSet"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#has_output",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has output"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Dataset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#iLogAccelerometerReadings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "i-Log data comprised of per-user streams of accelerometer values (in X, Y, and Z direction) with timestamps."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "i-Log accelerometer readings"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#iLogData"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#iLogData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "A dcat:Dataset that contains data captured by the i-Log mobile application."
+  }, {
+    "@language" : "en",
+    "@value" : "i-Log data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/dcat#Dataset"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#iLogGPSTrace",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "i-Log data comprised of per-user streams of GPS points with timestamps."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "i-Log GPS trace"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#iLogData"
+  } ]
+}, {
+  "@id" : "http://qrowd-project.eu/ontologies/crowd-voc#todo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/prov#Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]
