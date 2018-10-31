@@ -1,0 +1,49 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:ImageSentimentClassificationTask" "prov:Agent" "base:iLogData" "base:iLogAccelerometerReadings" "base:CrowdsourcingTaskContributorConstraint" "base:Requester" "base:SentimentClassificationTask" "base:CrowdsourcingTask" "base:Worker" "base:CrowdsourcingTaskAllocationConstraint" "base:Contributor" "base:iLogGPSTrace" "base:CrowdSourcingTaskConstraint" "base:Participant" "prov:Influence" "prov:End" "prov:Derivation" "prov:Quotation" "prov:Collection" "prov:InstantaneousEvent" "prov:Delegation" "prov:Invalidation" "prov:Bundle" "prov:Usage" "prov:SoftwareAgent" "prov:Attribution" "prov:PrimarySource" "prov:ActivityInfluence" "prov:Organization" "prov:EmptyCollection" "prov:Entity" "prov:Revision" "prov:Communication" "prov:Association" "prov:Start" "prov:Plan" "prov:EntityInfluence" "prov:AgentInfluence" "prov:Generation" "prov:Person" "dcat:Download" "dcat:WebService" "dcat:Feed" "dcat:Distribution" "dcat:Dataset" ; /*classes style*/
+	"prov:Plan" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"prov:Invalidation" -> "prov:ActivityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Invalidation" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"prov:Quotation" -> "prov:Derivation" [ label = "rdfs:subClassOf" ];
+	"prov:Communication" -> "prov:ActivityInfluence" [ label = "rdfs:subClassOf" ];
+	"base:SentimentClassificationTask" -> "base:CrowdsourcingTask" [ label = "rdfs:subClassOf" ];
+	"prov:ActivityInfluence" -> "prov:Influence" [ label = "rdfs:subClassOf" ];
+	"prov:SoftwareAgent" -> "prov:Agent" [ label = "rdfs:subClassOf" ];
+	"base:Worker" -> "base:Contributor" [ label = "rdfs:subClassOf" ];
+	"base:Participant" -> "base:Contributor" [ label = "rdfs:subClassOf" ];
+	"base:iLogGPSTrace" -> "base:iLogData" [ label = "rdfs:subClassOf" ];
+	"prov:PrimarySource" -> "prov:Derivation" [ label = "rdfs:subClassOf" ];
+	"prov:Attribution" -> "prov:AgentInfluence" [ label = "rdfs:subClassOf" ];
+	"base:CrowdsourcingTaskContributorConstraint" -> "base:CrowdSourcingTaskConstraint" [ label = "rdfs:subClassOf" ];
+	"prov:Delegation" -> "prov:AgentInfluence" [ label = "rdfs:subClassOf" ];
+	"dcat:Download" -> "dcat:Distribution" [ label = "rdfs:subClassOf" ];
+	"prov:Derivation" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Association" -> "prov:AgentInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:End" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:End" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"prov:Usage" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"prov:Usage" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Collection" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"prov:Bundle" -> "prov:Entity" [ label = "rdfs:subClassOf" ];
+	"prov:Start" -> "prov:EntityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Start" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"dcat:Feed" -> "dcat:Distribution" [ label = "rdfs:subClassOf" ];
+	"prov:EmptyCollection" -> "prov:Collection" [ label = "rdfs:subClassOf" ];
+	"base:Requester" -> "prov:Agent" [ label = "rdfs:subClassOf" ];
+	"prov:Revision" -> "prov:Derivation" [ label = "rdfs:subClassOf" ];
+	"dcat:WebService" -> "dcat:Distribution" [ label = "rdfs:subClassOf" ];
+	"prov:Organization" -> "prov:Agent" [ label = "rdfs:subClassOf" ];
+	"prov:EntityInfluence" -> "prov:Influence" [ label = "rdfs:subClassOf" ];
+	"prov:Person" -> "prov:Agent" [ label = "rdfs:subClassOf" ];
+	"prov:AgentInfluence" -> "prov:Influence" [ label = "rdfs:subClassOf" ];
+	"base:ImageSentimentClassificationTask" -> "base:SentimentClassificationTask" [ label = "rdfs:subClassOf" ];
+	"prov:Generation" -> "prov:ActivityInfluence" [ label = "rdfs:subClassOf" ];
+	"prov:Generation" -> "prov:InstantaneousEvent" [ label = "rdfs:subClassOf" ];
+	"base:iLogAccelerometerReadings" -> "base:iLogData" [ label = "rdfs:subClassOf" ];
+	"base:Contributor" -> "prov:Agent" [ label = "rdfs:subClassOf" ];
+	"base:CrowdsourcingTaskAllocationConstraint" -> "base:CrowdSourcingTaskConstraint" [ label = "rdfs:subClassOf" ];
+	"base:iLogData" -> "dcat:Dataset" [ label = "rdfs:subClassOf" ];
+	"dcat:Dataset" -> "dctype:Dataset" [ label = "rdfs:subClassOf" ];
+
+}

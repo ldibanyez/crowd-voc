@@ -1,0 +1,428 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://qrowd-project.eu/ontologies/crowd-voc#"
+     xml:base="http://qrowd-project.eu/ontologies/crowd-voc"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:crowd-voc="http://qrowd-project.eu/ontologies/crowd-voc#">
+    <owl:Ontology rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#">
+        <owl:versionIRI rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#0.0.1"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/dcat"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/prov-o-20130430"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#fixme -->
+
+
+    <owl:AnnotationProperty rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#fixme"/>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#todo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#todo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#created_task_configuration -->
+
+
+    <owl:ObjectProperty rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#created_task_configuration">
+        <rdfs:domain rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#Requester"/>
+        <rdfs:range rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration"/>
+        <rdfs:label xml:lang="en">created task configuration</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#has_allocation_constraint -->
+
+
+    <owl:ObjectProperty rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#has_allocation_constraint">
+        <rdfs:subPropertyOf rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#has_constraint"/>
+        <rdfs:range rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskAllocationConstraint"/>
+        <rdfs:label xml:lang="en">has allocation constraint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#has_configuration -->
+
+
+    <owl:ObjectProperty rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#has_configuration">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask"/>
+        <rdfs:range rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration"/>
+        <rdfs:label xml:lang="en">has configuration</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#has_constraint -->
+
+
+    <owl:ObjectProperty rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#has_constraint">
+        <rdfs:domain rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration"/>
+        <rdfs:range rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#CrowdSourcingTaskConstraint"/>
+        <rdfs:label xml:lang="en">has constraint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#has_contributor -->
+
+
+    <owl:ObjectProperty rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#has_contributor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask"/>
+        <rdfs:range rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#Contributor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#has_contributor_constraint -->
+
+
+    <owl:ObjectProperty rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#has_contributor_constraint">
+        <rdfs:subPropertyOf rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#has_constraint"/>
+        <rdfs:label xml:lang="en">has contributor constraint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#has_incentive -->
+
+
+    <owl:ObjectProperty rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#has_incentive">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration"/>
+        <rdfs:range rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#Incentive"/>
+        <rdfs:label xml:lang="en">has incentive</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#has_input -->
+
+
+    <owl:ObjectProperty rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#has_input">
+        <rdfs:domain rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:label xml:lang="en">has input</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#has_instruction_set -->
+
+
+    <owl:ObjectProperty rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#has_instruction_set">
+        <rdfs:domain rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration"/>
+        <rdfs:range rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskInstructionSet"/>
+        <rdfs:label xml:lang="en">has instruction set</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#has_output -->
+
+
+    <owl:ObjectProperty rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#has_output">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:label xml:lang="en">has output</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#Contributor -->
+
+
+    <owl:Class rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#Contributor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:comment xml:lang="en">A prov:Agent that executes/solves a crowdsourcing task.</rdfs:comment>
+        <rdfs:label xml:lang="en">contributor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#CrowdSourcingTaskConstraint -->
+
+
+    <owl:Class rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#CrowdSourcingTaskConstraint">
+        <todo xml:lang="en">Add human readable description.</todo>
+        <todo xml:lang="en">Find proper super class.</todo>
+        <rdfs:label xml:lang="en">crowdsourcing task constraint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask -->
+
+
+    <owl:Class rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#has_configuration"/>
+                <owl:someValuesFrom rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#has_input"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#has_output"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#has_contributor"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#Contributor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <todo xml:lang="en">Add human readable description.</todo>
+        <todo xml:lang="en">Add start and end time if this is meaningful.</todo>
+        <todo xml:lang="en">Find proper super class.</todo>
+        <rdfs:label xml:lang="en">crowdsourcing task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskAllocationConstraint -->
+
+
+    <owl:Class rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskAllocationConstraint">
+        <rdfs:subClassOf rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#CrowdSourcingTaskConstraint"/>
+        <todo xml:lang="en">Add human readable description.</todo>
+        <rdfs:label xml:lang="en">crowdsourcing task allocation constraint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration -->
+
+
+    <owl:Class rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#has_allocation_constraint"/>
+                <owl:someValuesFrom rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskAllocationConstraint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#has_contributor_constraint"/>
+                <owl:someValuesFrom rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskContributorConstraint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#has_incentive"/>
+                <owl:someValuesFrom rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#Incentive"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#has_instruction_set"/>
+                <owl:someValuesFrom rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskInstructionSet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <todo xml:lang="en">Add a human readable description.</todo>
+        <todo xml:lang="en">Find proper super class.</todo>
+        <rdfs:label xml:lang="en">crowdsourcing task configuration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskContributorConstraint -->
+
+
+    <owl:Class rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskContributorConstraint">
+        <rdfs:subClassOf rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#CrowdSourcingTaskConstraint"/>
+        <rdfs:comment xml:lang="en">A crowdsouring task constraint that describes the abilities and qualifications expected from a contributor to properly solve a given task (e.g. native language, age, geographic position, ...).</rdfs:comment>
+        <rdfs:label xml:lang="en">crowdsourcing task contributor constraint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskInstructionSet -->
+
+
+    <owl:Class rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskInstructionSet">
+        <todo xml:lang="en">Add human readable explanation.</todo>
+        <todo xml:lang="en">Find proper super class.</todo>
+        <rdfs:label xml:lang="en">crowdsourcing task instruction set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#ImageSentimentClassificationTask -->
+
+
+    <owl:Class rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#ImageSentimentClassificationTask">
+        <rdfs:subClassOf rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#SentimentClassificationTask"/>
+        <rdfs:comment xml:lang="en">A sentiment classification task which takes image data as input.</rdfs:comment>
+        <rdfs:label xml:lang="en">image sentiment classification task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#Incentive -->
+
+
+    <owl:Class rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#Incentive">
+        <todo xml:lang="en">Add human redable description.</todo>
+        <todo xml:lang="en">Find proper super class.</todo>
+        <rdfs:label xml:lang="en">incentive</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#Participant -->
+
+
+    <owl:Class rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#Participant">
+        <rdfs:subClassOf rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#Contributor"/>
+        <rdfs:comment xml:lang="en">A contributor that is unpaid/volunteering.</rdfs:comment>
+        <rdfs:label xml:lang="en">participant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#Requester -->
+
+
+    <owl:Class rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#Requester">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#created_task_configuration"/>
+                <owl:someValuesFrom rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTaskConfiguration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A prov:Agent (i.e. a machine or human) that initiates a crowdsourcing task.</rdfs:comment>
+        <rdfs:label xml:lang="en">requester</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#SentimentClassificationTask -->
+
+
+    <owl:Class rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#SentimentClassificationTask">
+        <rdfs:subClassOf rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#CrowdsourcingTask"/>
+        <rdfs:comment xml:lang="en">A crowdsourcing task that aims at assigning a sentiment category to a certain piece of information which expresses a sentiment.</rdfs:comment>
+        <rdfs:label xml:lang="en">sentiment classification task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#Worker -->
+
+
+    <owl:Class rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#Worker">
+        <rdfs:subClassOf rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#Contributor"/>
+        <rdfs:comment xml:lang="en">A contributor that is paid.</rdfs:comment>
+        <rdfs:label xml:lang="en">worker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#iLogAccelerometerReadings -->
+
+
+    <owl:Class rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#iLogAccelerometerReadings">
+        <rdfs:subClassOf rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#iLogData"/>
+        <rdfs:comment xml:lang="en">i-Log data comprised of per-user streams of accelerometer values (in X, Y, and Z direction) with timestamps.</rdfs:comment>
+        <rdfs:label xml:lang="en">i-Log accelerometer readings</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#iLogData -->
+
+
+    <owl:Class rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#iLogData">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+        <rdfs:label xml:lang="en">A dcat:Dataset that contains data captured by the i-Log mobile application.</rdfs:label>
+        <rdfs:label xml:lang="en">i-Log data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://qrowd-project.eu/ontologies/crowd-voc#iLogGPSTrace -->
+
+
+    <owl:Class rdf:about="http://qrowd-project.eu/ontologies/crowd-voc#iLogGPSTrace">
+        <rdfs:subClassOf rdf:resource="http://qrowd-project.eu/ontologies/crowd-voc#iLogData"/>
+        <rdfs:comment xml:lang="en">i-Log data comprised of per-user streams of GPS points with timestamps.</rdfs:comment>
+        <rdfs:label xml:lang="en">i-Log GPS trace</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#Agent -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#Agent"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/ -->
+
+
